@@ -28,11 +28,12 @@ function calculateBonusByProfit(index, total, seller) {
   } else if (index === 1 || index === 2) {
     return profit * 0.1;
   } else if (index === total - 1) {
-    return profit * 0.05;
-  } else {
     return 0;
+  } else {
+    return profit * 0.05;
   }
 }
+
 
 /**
  * Функция для анализа данных продаж
