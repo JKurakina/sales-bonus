@@ -117,9 +117,9 @@ function analyzeSalesData(data, options) {
       // Учёт количества проданных товаров
       if (!seller.products_sold[item.sku]) {
         seller.products_sold[item.sku] = 0;
-      } else {
+      } 
         seller.products_sold[item.sku] += item.quantity;
-      }
+      
     });
   });
   // @TODO: Сортировка продавцов по прибыли
